@@ -1,8 +1,4 @@
-<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 35 26 PM" src="https://github.com/user-attachments/assets/7493ccb8-9252-4edf-94f7-11b8b3a2571c" />
-<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 30 PM" src="https://github.com/user-attachments/assets/dcf36dad-3f21-4edd-af8f-b3a9a6feae0d" />
-<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 22 PM" src="https://github.com/user-attachments/assets/5db49a66-62b7-43d8-8152-2ce6a3e2582d" />
-<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 34 PM" src="https://github.com/user-attachments/assets/f749b674-5f80-439b-a37b-a4667273dbcd" />
-<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 40 PM" src="https://github.com/user-attachments/assets/dda7c514-b367-484f-882c-b4bcbea7b348" />
+
 # Azure Compliance Engine
 
 A small lab that provisions a sample Azure environment with Terraform, then scans it with a Python engine that checks the live resources against a set of compliance rules (tagging, region restrictions, public IP exposure, storage encryption-in-transit, and NSG inbound rules). Results are printed to the console and exported to CSV and Excel reports.
@@ -116,3 +112,10 @@ terraform destroy
 - Add new checks by writing a function in `compliance/checks.py` with the signature `(resource) -> (bool, str)` and registering it in the `CHECKS` tuple in `compliance/main.py`.
 - Adjust `REQUIRED_TAGS` / `ALLOWED_REGIONS` in `compliance/checks.py` to match your organization's policy.
 - Point the scanner at a different subscription by changing the active `az account set --subscription <id>` before running.
+
+<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 35 26 PM" src="https://github.com/user-attachments/assets/a76f3e77-ef84-4d32-a1ab-9d4d7eca40d9" />
+<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 30 PM" src="https://github.com/user-attachments/assets/b0ac609e-1329-4a5b-af7c-d4dbd4a03a67" />
+<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 22 PM" src="https://github.com/user-attachments/assets/ecd2505b-c3fd-4fd2-9ba0-91d8af3ea45a" />
+<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 34 PM" src="https://github.com/user-attachments/assets/9caa5a09-75ee-44ff-97bf-0ce3fff58e66" />
+<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 40 PM" src="https://github.com/user-attachments/assets/e96c527e-291b-4a39-a59b-98f5298bbe72" />
+
